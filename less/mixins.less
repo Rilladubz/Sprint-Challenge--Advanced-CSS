@@ -15,11 +15,10 @@
     text-align: center;
     transition: all 0.15s;
 
-    // @media @mobile {
-    //     width: 90%;
-    //     padding-left: 10%;
-    //     margin: 0rem;
-    // }
+    @media @phone {
+        width: 100%;
+        margin: 0rem;
+    }
 
     &:hover {
         color: @hov-textc;
@@ -41,4 +40,11 @@
 .anotherimg {
     width: 46%;
     margin-left: 4%;
+
+    @media @phone {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 2rem;
+    }
+
 }
