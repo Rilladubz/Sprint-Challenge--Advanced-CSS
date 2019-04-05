@@ -1,3 +1,11 @@
+.myimg-arrange {
+  max-width: 80rem;
+  width: 100%;
+}
+.anotherimg {
+  width: 46%;
+  margin-left: 4%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,7 +167,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -198,6 +206,10 @@ body {
 }
 .home .intro {
   border: solid red;
+}
+.home .intro img {
+  max-width: 80rem;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -244,11 +256,33 @@ body {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .walk-img {
+.home .walk .walk-text .btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: White;
+  background-color: Black;
+  text-align: center;
+  transition: all 0.15s;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:active {
+  color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

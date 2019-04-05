@@ -1,1 +1,44 @@
 // Mixins Here
+
+.mybtn(@text-color: black, @bg-color: blue, @hov-textc, @hov-bgcolor ) {
+    display: inline-block;
+    padding: 1rem 3rem;
+    // border-radius: 20px;
+    // margin: 0 0.3rem 0.3rem 4rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: @text-color;
+    background-color: @bg-color;
+    text-align: center;
+    transition: all 0.15s;
+
+    // @media @mobile {
+    //     width: 90%;
+    //     padding-left: 10%;
+    //     margin: 0rem;
+    // }
+
+    &:hover {
+        color: @hov-textc;
+        background-color: @hov-bgcolor;
+        cursor: pointer;
+    }
+
+    &:active {
+        color: #BBBBBB;
+        border-color: #BBBBBB;
+    }
+}
+
+.myimg-arrange {
+    max-width: 80rem;
+    width: 100%;
+}
+
+.anotherimg {
+    width: 46%;
+    margin-left: 4%;
+}
